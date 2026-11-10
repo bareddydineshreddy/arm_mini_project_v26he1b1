@@ -1,0 +1,6 @@
+//defines.h
+#define WRITEBYTE(WORD,STARTBIT,BYTE) WORD=((WORD&~(0xFF<<STARTBIT))| (BYTE<<STARTBIT))
+#define READBIT(WORD,BIT) ((WORD>>BIT)&1)
+#define SETBIT(WORD,BIT) (WORD|=(1<<BIT))
+#define CLRBIT(WORD,BIT) (WORD&=~(1<<BIT))
+
